@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Government Secure Login</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#d9e4e7,#b7cfd3);
+}
+
+.container {
+    display: flex;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+.login-box{
+    width:420px;
+    background:#bcd1d3;
+    padding:40px 35px;
+    border-radius:18px;
+    border:2px solid #1e6b6e;
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+    text-align:center;
+}
+
+/* Emblem */
+.emblem{
+    width:120px;
+    margin-bottom:20px;
+}
+
+/* Title */
+.title{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:25px;
+    color:#134b4f;
+}
+
+</style>
+</head>
+<body>
+    <!-- MLA HEADER (Full Screen Width) -->
+    <header class="mla-header">
+        <div class="header-title">
+            <img src="../logo.png.37 PM"  alt="Goa Police Logo" class="header-logo">
+            <h1>Welcome to Goa Police Department</h1>
+        </div>
+    </header>
+    <div class="container">
+        <!-- SIDEBAR NAVIGATION -->
+        <nav class="sidebar">
+            <div class="mobile-toggle" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="sidebar-header">
+                <div class="logo"></div>
+            </div>
+            <ul class="sidebar-menu"><br>
+                <li><a href="../index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li class="dropdown">
+                    <a href="#services"><i class="fas fa-user-shield"></i>Citizen Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="missing-item-related.html" target="_blank">Missing Item Related</a></li>
+                        <li><a href="https://app.goa-police.in/app" target="_blank">Verification Related</a></li>
+                        <li><a href="grievance-registration.html" target="_blank">Grievance Registration</a></li>
+                        <li><a href="tenant-verification.html" target="_blank">Tenant Verification</a></li>
+                        <li><a href="../RTI.pdf" target="_blank">RTI</a></li>
+                        <li><a href="servant-verification.html" target="_blank">Servant Verification</a></li>
+                        <li><a href="police-clearance-certificate.html" target="_blank">Police Clearance Certificate</a></li>
+                        <li><a href="create-rti-request.html" target="_blank">Create a RTI Request</a></li>
+                        <li><a href="rti-first-appeal.html" target="_blank">RTI First Appeal</a></li>
+                        <li><a href="block-stolen-lost-mobile.html" target="_blank">Block Stolen / Lost Mobile</a></li>
+                        <li><a href="internal-complaint-committee.html" target="_blank">Internal Complaint Committee</a></li>
+                        <li><a href="loudspeaker-permission.html" target="_blank">Loudspeaker Permission / Issue of Caste Certificates</a></li>
+                        <li><a href="central-citizen-services.html" target="_blank">CENTRAL CITIZEN SERVICES</a></li>
+                        <li><a href="view-update-request.html" target="_blank">View And Update Of Request</a></li>
+                        <li><a href="register-complaint.html" target="_blank">Register Complaint</a></li>
+                        <li><a href="view-fir.html" target="_blank">View FIR</a></li>
+                        <li><a href="e-fir-registration.html" target="_blank">E-FIR Registration</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../assistance/index.html"><i class="fas fa-hands-helping"></i>Assistance</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../assistance/drugs-and-you.html" target="_blank">Drugs &amp; You</a></li>
+                        <li><a href="../assistance/senior-citizen.html" target="_blank">Senior Citizen</a></li>
+                        <li><a href="../assistance/women-security.html" target="_blank">Women Security</a></li>
+                        <li><a href="../assistance/tourist-security.html" target="_blank">Tourist Security</a></li>
+                        <li><a href="../assistance/children-security.html" target="_blank">Children security</a></li>
+                        <li><a href="../assistance/traffic-rules.html" target="_blank">Traffic Rules</a></li>
+                        <li><a href="../assistance/road-safety.html" target="_blank">Road Safety</a></li>
+                        <li><a href="../assistance/license-private-security-agency.html" target="_blank">License Private Security Agency</a></li>
+                        <li><a href="../assistance/traffic-signs.html" target="_blank">Traffic Signs</a></li>
+                        <li><a href="../assistance/delivery-of-public-service.html" target="_blank">Delivery of Public Service</a></li>
+                        <li><a href="../assistance/download-forms.html" target="_blank">Download Forms</a></li>
+                        <li><a href="../assistance/motor-accident.html" target="_blank">In Case of Motor Accident</a></li>
+                        <li><a href="../assistance/help-yourself.html" target="_blank">Help Yourself</a></li>
+                        <li><a href="../assistance/sop-trafficking.html" target="_blank">SOP on Trafficking in Persons for Commercial Sexual Exploitation</a></li>
+                        <li><a href="../assistance/cyber-crime.html" target="_blank">Cyber Crime</a></li>
+                        <li><a href="../assistance/atm-safety.html" target="_blank">Safety Tips for ATM users</a></li>
+                        <li><a href="../assistance/card-safety.html" target="_blank">Safety Tips on Debit/Credit card</a></li>
+                        <li><a href="../assistance/cyber-crime-handbook.html" target="_blank">Cyber Crime Handbook</a></li>
+                        <li><a href="../assistance/cyber-dost.html" target="_blank">Cyber Dost</a></li>
+                        <li><a href="../assistance/cyber-prevention.html" target="_blank">Cyber Crime Prevention Tips Create Service Request</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://bharatkeveer.gov.in/" target="_blank"><i class="fas fa-medal"></i>Bharath ke Veer</a></li>
+                <li><a href="../RTI.pdf" target="_blank"><i class="fas fa-gavel"></i>RTI</a></li>
+                <li class="dropdown">
+                    <a href="../pages/good-work/index.html"><i class="fas fa-star"></i>Good Work Done</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../pages/good-work/community-policing.html" target="_blank">Community Policing</a></li>
+                        <li><a href="../pages/good-work/good-detection.html" target="_blank">Good Detection</a></li>
+                        <li><a href="../pages/good-work/good-efforts.html" target="_blank">Good Efforts</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/forms.html" target="_blank"><i class="fas fa-file-alt"></i>Forms</a></li>
+                <li><a href="../pages/publications.html" target="_blank"><i class="fas fa-book"></i>Publications</a></li>
+                <li><a href="https://digitalpolicecitizenservices.gov.in/centercitizen/login.htm" target="_blank"><i class="fas fa-mobile-alt"></i>Digital Police</a></li>
+                <li><a href="../pages/hgcd.html" target="_blank"><i class="fas fa-shield-alt"></i>HG&CD</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+
+/* Labels */
+label{
+    display:block;
+    text-align:left;
+    margin-top:18px;
+    margin-bottom:6px;
+    font-weight:500;
+    color:#333;
+}
+
+/* Inputs */
+input{
+    width:100%;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #999;
+    outline:none;
+    transition:0.3s;
+}
+
+input:focus{
+    border-color:#1e6b6e;
+    box-shadow:0 0 5px #1e6b6e;
+}
+
+/* Captcha Box */
+.captcha-container{
+    margin-top:20px;
+    text-align:left;
+}
+
+.captcha-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:8px;
+}
+
+.captcha{
+    background:#e4e4e4;
+    padding:8px 15px;
+    font-weight:bold;
+    letter-spacing:2px;
+    border:1px solid #555;
+    font-size:18px;
+}
+
+.refresh{
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* Button */
+button{
+    margin-top:25px;
+    width:140px;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    background:#1e6b6e;
+    color:white;
+    font-weight:500;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#134b4f;
+    transform:scale(1.05);
+}
+
+/* Footer */
+.footer{
+    margin-top:20px;
+    font-size:12px;
+    color:#444;
+}
+
+@media(max-width:500px){
+    .login-box{
+        width:90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <!-- Replace logo.png with your emblem image -->
+    <img src="logo.png.37 PM" class="emblem" alt="Government Emblem">
+
+    <div class="title">Secure Government Login Portal</div>
+
+    <form>
+        <label>Login Name</label>
+        <input type="text" placeholder="Enter login name">
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password">
+
+        <div class="captcha-container">
+            <div class="captcha-box">
+                <div class="captcha">u7bBFB</div>
+                <div class="refresh">🔄</div>
+            </div>
+
+            <label>Text Verification (Required)</label>
+            <input type="text" placeholder="Enter captcha text">
+        </div>
+
+        <button type="submit">Sign In</button>
+    </form>
+
+    <div class="footer">
+        © 2026 Government Secure System
+         <p><a href="../index.html">Back to Home</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>

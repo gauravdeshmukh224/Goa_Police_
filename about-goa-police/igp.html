@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inspector General of Police - Goa Police</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f2f4f8;
+}
+
+/* ===== HEADER ===== */
+.header{
+    background:linear-gradient(90deg,#001f3f,#003366);
+    padding:20px;
+    text-align:center;
+    color:white;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+.header h1{
+    font-size:32px;
+    letter-spacing:1px;
+}
+
+/* ===== PAGE TITLE ===== */
+.page-title{
+    text-align:center;
+    margin:40px 0 20px;
+}
+
+.page-title h2{
+    font-size:30px;
+    color:#2c3e50;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+/* ===== IGP CONTAINER ===== */
+.igp-container{
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+    gap:50px;
+    padding:20px;
+}
+
+/* ===== CARD DESIGN ===== */
+.igp-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    text-align:center;
+    transition:0.3s;
+    position:relative;
+    overflow:hidden;
+}
+
+.igp-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 35px rgba(0,0,0,0.15);
+}
+
+/* Red Background Image Frame */
+.image-frame{
+    background:#d60000;
+    padding:10px;
+    border-radius:10px;
+    display:inline-block;
+    overflow:hidden;
+}
+
+.image-frame img{
+    width:280px;
+    height:330px;
+    object-fit:cover;
+    border-radius:8px;
+    transition:0.4s;
+}
+
+.igp-card:hover img{
+    transform:scale(1.05);
+}
+
+/* Name Styling */
+.igp-name{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:600;
+    color:#2c3e50;
+}
+
+.igp-rank{
+    font-size:16px;
+    color:#555;
+    margin-top:5px;
+}
+
+/* Decorative Line */
+.igp-card::after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(90deg,#001f3f,#d60000);
+}
+
+/* Footer */
+.footer{
+    margin-top:60px;
+    background:#001f3f;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+}
+
+@media(max-width:600px){
+    .image-frame img{
+        width:100%;
+        height:auto;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>GOA POLICE</h1>
+</div>
+
+<!-- PAGE TITLE -->
+<div class="page-title">
+    <h2>INSPECTOR GENERAL OF POLICE</h2>
+</div>
+
+<!-- IGP SECTION -->
+<div class="igp-container">
+
+    <!-- IGP CARD 1 -->
+    <div class="igp-card">
+        <div class="image-frame">
+            <img src="igp1.jpg" alt="Shri K R Chaurasia">
+        </div>
+        <div class="igp-name">Shri K. R. Chaurasia, IPS</div>
+        <div class="igp-rank">Inspector General of Police</div>
+    </div>
+
+    <!-- IGP CARD 2 -->
+    <div class="igp-card">
+        <div class="image-frame">
+            <img src="igp2.jpg" alt="Shri Ajay K Sharma">
+        </div>
+        <div class="igp-name">Shri Ajay K. Sharma, IPS</div>
+        <div class="igp-rank">Inspector General of Police</div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Goa Police | Official Website
+</div>
+
+</body>
+</html>

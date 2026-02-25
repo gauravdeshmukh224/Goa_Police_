@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goa Police - Card Fraud Prevention</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    
+    color:#333;
+}
+
+/* ===== HEADER ===== */
+.header{
+    background:linear-gradient(135deg, #010b3a 0%, #764ba2 100%);
+    color:white;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.header img{
+    width:70px;
+}
+
+.header h1{
+    font-size:26px;
+    letter-spacing:1px;
+}
+
+.sub-header{
+    text-align:center;
+    background:#dbc441;
+    padding:10px;
+    font-weight:bold;
+    color:#000;
+}
+
+/* ===== CONTAINER ===== */
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    background:#ffffff;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+    animation:fadeIn 1s ease-in-out;
+}
+
+.section{
+    margin-bottom:20px;
+    padding:20px;
+    background:#f4f8fb;
+    border-left:6px solid #003366;
+    border-radius:8px;
+    transition:0.3s;
+    animation:slideUp 0.8s ease forwards;
+}
+
+.section:hover{
+    transform:translateX(8px);
+    background:#e6f0fa;
+}
+
+.section h3{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:8px;
+    color:#003366;
+}
+
+.section i{
+    color:#B22222;
+}
+
+.alert{
+    background:#ffe5e5;
+    border-left:6px solid red;
+}
+
+.contact{
+    background:#e3f2fd;
+    border-left:6px solid #1976d2;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    text-align:center;
+    margin-top:30px;
+    font-weight:bold;
+    color:#003366;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes slideUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+    .container{
+        padding:20px;
+    }
+    .header{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <!-- Replace src with actual Goa Police logo if available -->
+    <img src="logo.png.37 PM" alt="Goa Police Logo">
+    <h1>Goa Police - Cyber Crime Cell</h1>
+</div>
+
+<div class="sub-header">
+    HOW TO AVOID DEBIT / ATM / CREDIT CARD FRAUD
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <div class="section alert">
+        <h3><i class="fas fa-exclamation-triangle"></i> Social Engineering Alert</h3>
+        <p>Never disclose your card details, PIN, CVV or OTP to anyone over phone or email claiming to be bank officials. Contact your bank directly if your card is blocked.</p>
+    </div>
+
+    <div class="section">
+        <h3><i class="fas fa-clock"></i> Timely Delivery of Card & PIN</h3>
+        <p>Ensure you receive your card and PIN on time. If delayed, contact your bank immediately.</p>
+    </div>
+
+    <div class="section">
+        <h3><i class="fas fa-lock"></i> Card Protection</h3>
+        <p>Store your card securely and prevent unauthorized access.</p>
+    </div>
+
+    <div class="section">
+        <h3><i class="fas fa-user-secret"></i> Maintain Confidentiality</h3>
+        <p>Keep your PIN, CVV and card details secret. Never write your PIN on the card.</p>
+    </div>
+
+    <div class="section">
+        <h3><i class="fas fa-hand-paper"></i> Self Usage Only</h3>
+        <p>Always operate your card yourself. Do not allow others to use it on your behalf.</p>
+    </div>
+
+    <div class="section">
+        <h3><i class="fas fa-credit-card"></i> Safe Terminal Usage</h3>
+        <p>Check ATM/POS machines for suspicious external devices before inserting your card.</p>
+    </div>
+
+    <div class="section">
+        <h3><i class="fas fa-eye-slash"></i> Avoid Shoulder Surfing</h3>
+        <p>Cover the keypad while entering your PIN.</p>
+    </div>
+
+    <div class="section">
+        <h3><i class="fas fa-shield-alt"></i> Avoid Cloning</h3>
+        <p>Ensure your card is swiped in your presence and never taken out of sight.</p>
+    </div>
+
+    <div class="section">
+        <h3><i class="fas fa-globe"></i> Use Secure Websites</h3>
+        <p>Only use SSL-certified websites starting with <strong>https</strong> and showing a padlock symbol.</p>
+    </div>
+
+    <div class="section">
+        <h3><i class="fas fa-trash"></i> Dispose Transaction Slips</h3>
+        <p>Destroy unnecessary transaction slips securely.</p>
+    </div>
+
+    <div class="section">
+        <h3><i class="fas fa-search"></i> Regular Transaction Check</h3>
+        <p>Monitor your transactions regularly and report unauthorized activity immediately.</p>
+    </div>
+
+    <div class="section contact">
+        <h3><i class="fas fa-phone"></i> Cyber Crime Assistance</h3>
+        <p><strong>Cyber Crime Police Station</strong></p>
+        <p>Phone: 0832-2443201</p>
+        <p>Email: picyber@goapolice.gov.in</p>
+    </div>
+
+    <div class="footer">
+        Stay Alert • Stay Secure • Protect Your Finances
+    </div>
+
+</div>
+
+</body>
+</html>

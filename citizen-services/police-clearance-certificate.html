@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Police Clearance Certificate</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#eef2f3,#d7e1ec);
+    padding:40px 20px;
+}
+
+/* Main Container */
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    padding:40px;
+}
+
+/* Title */
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#1a3c6e;
+    font-weight:600;
+}
+
+/* Layout */
+.content{
+    display:flex;
+    gap:30px;
+}
+
+/* Sidebar */
+.sidebar{
+    width:30%;
+    background:#f4f7fa;
+    border-radius:10px;
+    overflow:hidden;
+    border:1px solid #dcdcdc;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:18px 20px;
+    border-bottom:1px solid #e5e5e5;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.sidebar li:hover{
+    background:#1a3c6e;
+    color:white;
+}
+
+.sidebar li.active{
+    background:#1a3c6e;
+    color:white;
+    font-weight:500;
+}
+
+/* Main Content */
+.main{
+    width:70%;
+    background:#fafafa;
+    border-radius:10px;
+    padding:25px;
+    border:1px solid #ddd;
+}
+
+.main h2{
+    margin-bottom:15px;
+    color:#1a3c6e;
+}
+
+.main ol{
+    padding-left:20px;
+}
+
+.main ol li{
+    margin-bottom:12px;
+    line-height:1.6;
+}
+
+.main a{
+    color:#0077cc;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.main a:hover{
+    text-decoration:underline;
+}
+
+/* Button */
+.button-container{
+    text-align:center;
+    margin-top:35px;
+}
+
+button{
+    background:#1a3c6e;
+    color:white;
+    padding:12px 35px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#16345d;
+    transform:scale(1.05);
+}
+
+/* Responsive */
+@media(max-width:900px){
+    .content{
+        flex-direction:column;
+    }
+    .sidebar,
+    .main{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Police Clearance Certificate</h1>
+
+    <div class="content">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li class="active">Procedure to Apply</li>
+                <li>Documents Required</li>
+                <li>Processing Time</li>
+                <li>Terms & Conditions</li>
+                <li>FAQ's</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <h2>Procedure to Apply</h2>
+
+            <ol>
+                <li>Register yourself on <a href="#">Goa Police Web Portal</a> and login.</li>
+                <li>Go to Citizen Services Section and select Police Clearance Certificate.</li>
+                <li>Fill in the application form carefully.</li>
+                <li>Attach relevant documents and proceed to payment section.</li>
+                <li>Submit the application and note the reference number for tracking.</li>
+            </ol>
+
+            <br>
+            <p>
+                Click <a href="#">here</a> to download Standard Operating Procedure to apply for PCC.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="button-container">
+        <button>Proceed to Apply</button>
+        <p><a href="../index.html">Back to Home</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>

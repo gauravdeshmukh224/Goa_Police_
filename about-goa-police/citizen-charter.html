@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citizen Charter - Goa Police</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* HEADER */
+.header{
+    background:linear-gradient(90deg,#001f3f,#003366);
+    color:white;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.header h1{
+    font-size:30px;
+}
+
+/* HERO SECTION */
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1581091012184-5c9e2a8d2c4e');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:800px;
+    margin:auto;
+}
+
+/* SECTION */
+.section{
+    max-width:1200px;
+    margin:60px auto;
+    padding:20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:28px;
+    margin-bottom:30px;
+    color:#003366;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:80px;
+    height:4px;
+    background:#d60000;
+    display:block;
+    margin:10px auto;
+    border-radius:2px;
+}
+
+/* CARD GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    color:#001f3f;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+table th{
+    background:#003366;
+    color:white;
+    padding:15px;
+    text-align:left;
+}
+
+table td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+table tr:hover{
+    background:#f2f2f2;
+}
+
+/* FOOTER */
+.footer{
+    background:#001f3f;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:60px;
+    font-size:14px;
+}
+
+@media(max-width:600px){
+    .hero h2{
+        font-size:26px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+    <h1>GOA POLICE</h1>
+</div>
+
+<div class="hero">
+    <h2>Citizen Charter</h2>
+    <p>Our commitment to providing transparent, accountable, and citizen-friendly policing services to the people of Goa.</p>
+</div>
+
+<!-- VISION & MISSION -->
+<div class="section">
+    <div class="section-title">Vision & Mission</div>
+    <div class="grid">
+        <div class="card">
+            <h3>Vision</h3>
+            <p>To ensure a safe, secure and peaceful Goa through professional excellence, community partnership, and modern policing practices.</p>
+        </div>
+        <div class="card">
+            <h3>Mission</h3>
+            <p>To uphold the law impartially, protect life and property, prevent crime, and deliver prompt and efficient services to citizens with integrity and respect.</p>
+        </div>
+    </div>
+</div>
+
+<!-- CITIZEN RIGHTS -->
+<div class="section">
+    <div class="section-title">Rights of Citizens</div>
+    <div class="grid">
+        <div class="card">
+            <h3>Right to Register FIR</h3>
+            <p>Every citizen has the right to register a First Information Report (FIR) at any police station without delay.</p>
+        </div>
+        <div class="card">
+            <h3>Right to Respectful Treatment</h3>
+            <p>Citizens shall be treated with dignity, fairness, and without discrimination based on caste, religion, gender, or status.</p>
+        </div>
+        <div class="card">
+            <h3>Right to Information</h3>
+            <p>Citizens have the right to receive updates regarding their complaints and legal procedures.</p>
+        </div>
+    </div>
+</div>
+
+<!-- RESPONSIBILITIES -->
+<div class="section">
+    <div class="section-title">Responsibilities of Citizens</div>
+    <div class="grid">
+        <div class="card">
+            <h3>Cooperate with Police</h3>
+            <p>Provide accurate information and assist in investigations when required.</p>
+        </div>
+        <div class="card">
+            <h3>Follow Laws</h3>
+            <p>Respect and obey the laws of the land and maintain public order.</p>
+        </div>
+        <div class="card">
+            <h3>Report Crimes</h3>
+            <p>Immediately inform police authorities about crimes or suspicious activities.</p>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICE STANDARDS -->
+<div class="section">
+    <div class="section-title">Service Delivery Standards</div>
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Time Frame</th>
+        </tr>
+        <tr>
+            <td>Registration of FIR</td>
+            <td>Immediately upon receiving complaint</td>
+        </tr>
+        <tr>
+            <td>Police Verification for Passport</td>
+            <td>Within 7 working days</td>
+        </tr>
+        <tr>
+            <td>Character Certificate</td>
+            <td>Within 10 working days</td>
+        </tr>
+        <tr>
+            <td>Lost Report Copy</td>
+            <td>Same day</td>
+        </tr>
+    </table>
+</div>
+
+<!-- GRIEVANCE -->
+<div class="section">
+    <div class="section-title">Grievance Redressal</div>
+    <div class="grid">
+        <div class="card">
+            <h3>Complaint Mechanism</h3>
+            <p>Citizens can submit complaints directly to the Superintendent of Police or through the official Goa Police website.</p>
+        </div>
+        <div class="card">
+            <h3>Helpline Numbers</h3>
+            <p>Dial 100 for emergency police assistance. Cyber Crime complaints can be reported at the nearest police station or online portal.</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    © 2026 Goa Police | Citizen Charter
+</div>
+
+</body>
+</html>

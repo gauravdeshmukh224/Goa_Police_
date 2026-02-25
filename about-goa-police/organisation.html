@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organisation Structure - Goa Police</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color: white;
+    text-align: center;
+}
+
+.header {
+    background: #001f3f;
+    padding: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.container {
+    padding: 50px 20px;
+}
+
+.level {
+    margin: 30px 0;
+}
+
+.box {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    background: linear-gradient(145deg,#e0f7e9,#b2dfdb);
+    color: #003333;
+    border-radius: 8px;
+    font-weight: 600;
+    min-width: 180px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    background: #a5d6a7;
+}
+
+.line {
+    width: 2px;
+    height: 40px;
+    background: white;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 25px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    background: #ffaa00;
+}
+
+@media(max-width:768px){
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+Organisation Structure - Goa Police
+</div>
+
+<div class="container">
+
+<!-- DGP -->
+<div class="level">
+    <div class="box">DGP</div>
+</div>
+
+<div class="line"></div>
+
+<!-- IGP -->
+<div class="level">
+    <div class="box">IGP</div>
+</div>
+
+<div class="line"></div>
+
+<!-- DIG Level -->
+<div class="level row">
+    <div class="box">DIGP HQ</div>
+    <div class="box">DIGP Crime & Range</div>
+</div>
+
+<div class="line"></div>
+
+<!-- SP HQ Side -->
+<div class="level">
+<h3>Under DIGP HQ</h3>
+<div class="row">
+    <div class="box">SP HQ</div>
+    <div class="box">SP HQ II</div>
+    <div class="box">SP EOC</div>
+    <div class="box">SP L & V</div>
+    <div class="box">Principal PTS</div>
+    <div class="box">SP Training</div>
+    <div class="box">Commandant IRB</div>
+    <div class="box">SP Election Cell</div>
+    <div class="box">SP MT</div>
+    <div class="box">SP Security</div>
+    <div class="box">SP FRRO</div>
+    <div class="box">SP ACB</div>
+    <div class="box">SP Coastal Security</div>
+    <div class="box">SP ATS</div>
+    <div class="box">SP Konkan Railway</div>
+    <div class="box">SP GA</div>
+</div>
+</div>
+
+<hr style="margin:50px 0;border-color:white;opacity:0.3;">
+
+<!-- SP Crime & Range Side -->
+<div class="level">
+<h3>Under DIGP Crime & Range</h3>
+<div class="row">
+    <div class="box">SP North</div>
+    <div class="box">SP South</div>
+    <div class="box">SP Traffic</div>
+    <div class="box">SP Crime Branch</div>
+    <div class="box">SP Wireless</div>
+    <div class="box">SP PCR</div>
+    <div class="box">SP ANC</div>
+    <div class="box">SP SB</div>
+    <div class="box">SP Cyber Crime</div>
+</div>
+</div>
+
+<a href="../index.html" class="back-btn">← Back to Home</a>
+
+</div>
+
+</body>
+</html>
