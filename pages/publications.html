@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications - Goa Police</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* ===== HEADER ===== */
+.header{
+    background: rgba(95, 54, 177, 0.4);
+    padding:25px;
+    text-align:center;
+    backdrop-filter: blur(10px);
+}
+
+.header h1{
+    font-size:38px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.header p{
+    margin-top:8px;
+    font-size:15px;
+    opacity:0.8;
+}
+
+/* ===== MAIN SECTION ===== */
+.section{
+    padding:60px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:50px;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:80px;
+    height:4px;
+    background:#00e0ff;
+    display:block;
+    margin:10px auto;
+    border-radius:5px;
+}
+
+/* ===== CARD CONTAINER ===== */
+.card-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+/* ===== PUBLICATION CARD ===== */
+.card{
+    background: rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:15px;
+    backdrop-filter: blur(12px);
+    transition:0.4s ease;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.5);
+}
+
+.card h3{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:20px;
+    color:#00e0ff;
+}
+
+.year-list{
+    list-style:none;
+}
+
+.year-list li{
+    padding:12px;
+    margin-bottom:12px;
+    background:rgba(255,255,255,0.1);
+    border-radius:8px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.year-list li:hover{
+    background:#00e0ff;
+}
+
+.year-list a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    display:block;
+}
+
+.year-list li:hover a{
+    color:black;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.5);
+    margin-top:40px;
+    font-size:14px;
+    opacity:0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .section{
+        padding:40px 5%;
+    }
+    .header h1{
+        font-size:28px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<div class="header">
+    <h1><i class="fas fa-book"></i> Publications</h1>
+    <p>Official Crime & Statistical Reports</p>
+</div>
+
+<!-- ===== PUBLICATION SECTION ===== -->
+<section class="section">
+
+    <div class="section-title">Annual Reports</div>
+
+    <div class="card-container">
+
+        <!-- Crime in India -->
+        <div class="card">
+            <h3><i class="fas fa-shield-alt"></i> Crime in India</h3>
+            <ul class="year-list">
+                <li><a href="#">2022</a></li>
+                <li><a href="#">2021</a></li>
+                <li><a href="#">2020</a></li>
+                <li><a href="#">2019</a></li>
+            </ul>
+        </div>
+
+        <!-- Accidental Deaths & Suicides -->
+        <div class="card">
+            <h3><i class="fas fa-exclamation-triangle"></i> Accidental Deaths & Suicides in India</h3>
+            <ul class="year-list">
+                <li><a href="#">2022</a></li>
+                <li><a href="#">2021</a></li>
+                <li><a href="#">2020</a></li>
+                <li><a href="#">2019</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+    © 2026 Goa Police | Government of India | All Rights Reserved
+</div>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organisation Structure - Goa Police</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#2e475e,#303e56);
+    color:white;
+}
+
+/* ===== HEADER ===== */
+.header{
+    text-align:center;
+    padding:40px 20px;
+    background: rgba(152, 104, 201, 0.407);
+    backdrop-filter: blur(8px);
+}
+
+.header h1{
+    font-size:36px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.header p{
+    margin-top:8px;
+    opacity:0.8;
+}
+
+/* ===== STRUCTURE SECTION ===== */
+.structure{
+    padding:60px 10%;
+    text-align:center;
+}
+
+/* ===== CARD STYLE ===== */
+.card{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding:25px;
+    border-radius:15px;
+    width:fit-content;
+    margin:20px auto;
+    min-width:280px;
+    transition:0.4s;
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.5);
+}
+
+.card h3{
+    font-size:16px;
+    font-weight:600;
+}
+
+/* ===== CONNECTOR LINE ===== */
+.line{
+    width:3px;
+    height:50px;
+    background:white;
+    margin:0 auto;
+}
+
+/* ===== BOTTOM ROW ===== */
+.row{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+    background:rgba(0,0,0,0.4);
+    font-size:14px;
+    opacity:0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .row{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1><i class="fas fa-sitemap"></i> Organisation Structure</h1>
+    <p>Goa Police - Civil Defence & Home Guards</p>
+</div>
+
+<!-- STRUCTURE -->
+<section class="structure">
+
+    <!-- TOP -->
+    <div class="card">
+        <h3>
+            DIRECTOR GENERAL OF POLICE / <br>
+            EX-OFFICIO COMMANDANT GENERAL HOME GUARDS & <br>
+            DIRECTOR, CIVIL DEFENCE, GOA
+        </h3>
+    </div>
+
+    <div class="line"></div>
+
+    <!-- SECOND -->
+    <div class="card">
+        <h3>
+            DY. COMMANDANT GENERAL HOME GUARDS & <br>
+            DY. DIRECTOR, CIVIL DEFENCE
+        </h3>
+    </div>
+
+    <div class="line"></div>
+
+    <!-- THIRD ROW -->
+    <div class="row">
+
+        <div class="card">
+            <h3>
+                JR. STAFF OFFICER CIVIL DEFENCE & <br>
+                DISTRICT COMMANDANT HOME GUARDS
+            </h3>
+        </div>
+
+        <div class="card">
+            <h3>
+                DY. CONTROLLER, <br>
+                CIVIL DEFENCE
+            </h3>
+        </div>
+
+        <div class="card">
+            <h3>
+                MEDICAL OFFICER <br>
+                CIVIL DEFENCE
+            </h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Goa Police | Government of Goa | All Rights Reserved
+</div>
+
+</body>
+</html>
